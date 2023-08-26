@@ -52,7 +52,7 @@ const Single = () => {
     <Navbar/>
     <div className='single'>
         <div className='content'>
-            <img src={`../upload/${[post.img]}`}/>
+            <img src={`http://ec2-18-237-75-186.us-west-2.compute.amazonaws.com/upload/${[post.img]}`}/>
             
         <div className='user'>
             {post.userImg && <img

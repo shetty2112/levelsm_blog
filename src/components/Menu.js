@@ -53,7 +53,7 @@ const Menu = ({cat}) => {
         <h1>Other posts you may like</h1>
         {posts.map(post => (
             <div className='menu_post' key={post.id}>
-                <img src={`../upload/${post.img}`}/>
+                <img src={`http://ec2-18-237-75-186.us-west-2.compute.amazonaws.com/upload/${post.img}`}/>
                 <h2>{post.title}</h2>
                 <Link className='menu_post_link' to={`/post/${post.id}`}><button>Read More</button></Link>
             </div>
