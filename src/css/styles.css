@@ -1,0 +1,354 @@
+.App{
+    overflow-x: hidden;
+}
+.auth{
+    background-color: #b9e7e7;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_form{
+    display: inline-block;
+    background-color: white;
+    min-height: 55vh;
+    padding: 5vh 0vw;
+    width: 35vw;
+}
+
+.login_form h1{
+    color: teal;
+}
+
+.login_form input{
+    width: 90%;
+    height: 6vh;
+    margin-top: 3%;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.2vw;
+}
+
+.login_form input:focus{
+    outline: none;
+    border-bottom: 1px solid teal;
+}
+
+.login_form button{
+    margin-top: 5%;
+    width: 90%;
+    background-color: #b9e7e7;
+    outline: none;
+    height: 6vh;
+    border: none;
+    font-size: 1.5vw;
+    color: black;
+}
+
+.login_form p{
+    display: contents;
+}
+
+
+#p_error{
+    color: red;
+    display: block;
+}
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.navbar h1{
+    font-family: Forte;
+    color: black;
+    margin-left: 10vw;
+}
+
+.links{
+    margin-left: 20vw;
+}
+.link{
+    margin-left: 2vw;
+}
+.link h4{
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.3vw;
+    color: black
+}
+.links button{
+    margin-left: 2vw;
+    height: 5vh;
+    width: 5vw;
+    background-color: #b9e7e7;
+    outline: none;
+    border: none;
+    color: black;
+
+    &:hover{
+        background-color: teal;
+        color: white;
+        transition: 0.2s;
+    }
+}
+
+.footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #b9e7e7;
+}
+
+.footer h1{
+    font-family: Forte;
+    color: black;
+    margin-left: 10vw;
+}
+
+.footer h4{
+    margin-left: 60vw;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.post{
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    gap: 100px;
+
+    &:nth-child(2n+1){
+        flex-direction: row-reverse;
+    }
+}
+
+.posts_image{
+    flex: 1;
+    position: relative;
+}
+
+.post img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    box-shadow: -20px 20px 2px 0px #b9e7e7;
+
+}
+.posts_content{
+    flex: 2;
+    text-align: left;
+}
+.post_link{
+    text-decoration: none;
+    color: black;
+}
+.post button{
+    width: max-content;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid teal;
+    color: teal;
+
+    &:hover{
+        border: 1px solid white;
+        background-color: teal;
+        color: white;
+        transition: 0.2s;
+    }
+}
+
+/* Single */
+.single{
+    display: flex;
+    gap: 50px;
+}
+.content{
+    width: 50vw;
+    text-align: start;
+    margin-left: 20%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.content img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2%;
+}
+.user span{
+    font-weight: bold;
+}
+.user p{
+    margin: 0;
+}
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.edit{
+    display: flex;
+    gap: 5px;
+}
+.edit img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.content h1{
+    font-size: 40px;
+}
+.content p{
+    text-align: justify;
+}
+
+/* Menu */
+.menu, .menup{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 3%;
+}
+.menu h1{
+    font-size: 20px;
+    color: #555;
+}
+.menu h2{
+    text-align: start;
+}
+.menu_post{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu_post img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.menu_post_link{
+    text-align: start;
+} 
+.menu_post button{
+    width: max-content;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid teal;
+    color: teal;
+
+    &:hover{
+        border: 1px solid white;
+        background-color: teal;
+        color: white;
+        transition: 0.2s;
+    }
+}
+
+/* Write */
+.add{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    text-align: start;
+}
+.write_content{
+    width: 60vw;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.write_content input{
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+.editor_container{
+    height: 60vh;
+    overflow: scroll;
+    border: 1px solid lightgray;
+    margin-bottom: 5%;
+}
+.editor{
+    height: 100%;
+    border: none;
+}
+.add .menup{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.add .menup .item{
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #555;
+    gap: 5px;
+    font-size: 15px;
+}
+.add .menup .item h1{
+    font-size: 20px;
+    margin: 0;
+}
+.add .menup .item span{
+    margin-top: 5%;
+}
+.add .menup .item .file{
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 5%;
+}
+.add .menup .item .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    height: 5vh
+}
+.draft_btn{
+    cursor: pointer;
+    color: teal;
+    background-color: white;
+    border: 1px solid teal;
+}
+.update_btn{
+        cursor: pointer;
+        color: white;
+        background-color: teal;
+        border: 1px solid teal;
+        padding: 3px 5px;
+}
+.cat{
+    color: teal;
+    font-size: 15px;
+    display: flex;
+    gap: 2px;
+    margin-top: 1%;
+}
